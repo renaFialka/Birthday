@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <style>
+        /* #size {
+          font-size: 2rem;
+        }*/
+        html {
+          font-size: 50px;
+          font-family: 'Roboto', bold; /*sans-serif; */
+          padding: 0px 0px 0px 0px;
+          background-color: #9FB5B3;
+
+
+
+          /* font-family: 'Arizonia', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Grape Nuts', cursive;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Roboto', sans-serif;*/
+
+          /*text-justify: center;*/
+        } 
+        img{
+            border-radius: 5%;
+        }
+        /* .item {
+          font-weight: 1500;
+        } */
+
+       /* #family {
+          font-family: 'Roboto', cursive;
+        } */
+
+        .l1 {
+            /* padding-top: 125px; */
+            font-size: 125px;
+        }
+
+        .l2 {
+            padding-top: 25px;
+            align-content: center;
+            padding-block: 25px;
+            font-size: 50px;
+        }
+        .container{
+           display:grid;
+           justify-content: center;
+           grid-template-columns: 400px 400px 400px 400px;/* 1fr 1fr 1fr 1fr;*/
+           grid-template-rows:400px 400px 400px 400px;/* 1fr 1fr 1fr 1fr;*/
+           gap:10px;
+          /* height:100vh;*/
+
+        }
+        .grey{
+            background-color: lightgray;
+
+        }
+        .black{
+            background-color: dimgray;
+            color:aliceblue;
+        }
+        /*#figure{
+            align-items: center;
+        }*/
+        .picture{
+            margin: 0;
+            padding: 0;
+            border: 0;
+/*             object-fit: cover;
+            object-position: bottome; */
+            /*transform: rotate(-90deg) scale(0.75);*/
+        } 
+        .item{
+            text-align: center;
+            border-radius: 5%;
+           /* align-self: center;*/  
+        }
+       .place{
+           font-size: 35px;
+            padding:0px;
+            margin-block-start: 0em;
+           margin-block-end: 0em;
+            /* padding-top: 25px; */
+/*             margin: 0;
+            padding: 0;
+            border: 0; */
+        } 
+        .info{
+          /*  font-family: 'Arizonia', cursive;*/
+/*             list-style-position: outside;
+            align-items: flex-start;
+            margin-top: 2px; 
+            margin-bottom: 2px;  */
+           /* padding-left:10px;*/
+            font-size:50px;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            /*text-indent: 3%;
+
+         /*  margin-block-start: 1em;
+            /*text-align: left;*/
+        }
+        ul {
+         /*   margin-block-start: 0px;
+            margin-block-end: 0px;
+           /* padding-inline-start: 0px;*/
+           /* padding-inline: 40px; */
+
+           /* margin: 1em 1em 1em 1em; */
+           padding: 0px 0px 0px 0px;
+           padding-inline-start: 0px;
+           /* margin-block-start: 0em;
+           margin-block-end: 0em; */
+        }
+        ul ul {
+            margin: 0em 0em 0em 0em; 
+            padding: 0px 0px 0px 0px;
+    
+        }
+        .item-place{
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+            font-family: 'Arizonia', cursive;
+
+        }
+        .half-top{
+           /* padding-top: 75px;*/
+            font-size: 50px;
+            font-family: 'Roboto', bold; 
+            color: white;
+            background-color: #9FB5B3;
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right:100px;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+             /* padding-top: 20px; */
+           /* padding-inline: 40px; */
+       /*      margin: 0em 0em 0em 0em;  */
+        }
+        .half-bottom{
+            font-size: 50px;
+            font-family: 'Roboto', bold; 
+            color: white;
+            background-color: #9FB5B3;
+            margin-left: 100px;
+            margin-right:100px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            /* padding-bottom: 20px; */
+        }
+/*         #figure{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        } */
+        /*.gr1{
+            order:1;
+        }
+        .img{
+            padding:10px;
+            float:left;
+        }*/
+        .white{
+            /* transform: rotate(-90deg) scale(0.75); */
+            margin: 0;
+/*             padding: 0;*/
+            border: 0;  
+        } 
+        .courgette{
+            font-family: 'Courgette', cursive;
+        }
+        .arizona{
+            font-family:  'Arizonia', cursive;
+            /* font-size:75px; */
+        }
+        .grape{
+            font-family: 'Grape Nuts', cursive;
+        }
+        .ibm{
+            font-family: 'IBM Plex Serif', serif;
+            font-style: italic;
+        }
+        .tangerine{
+            font-family: 'Tangerine', cursive;  
+            font-size:90px;
+            padding: 0px 0px 0px 0px;
+            display:block;
+        }
+        .invitation{
+            margin-block-start: 0em;   
+            margin-block-end: 0em;
+        }
+       
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Courgette&family=Grape+Nuts&family=IBM+Plex+Serif:ital,wght@0,700;1,700&family=Roboto&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    
+<body>
+<div class="container">
+    <div class="item white">
+     <figure class="picture pic1">
+        <img src="Renata/atelier_ctverec.jpg" alt="Renata1" height="400px" widht="400px"/> 
+    </figure>
+        <!-- img src="Renata/Renata1.jpg" alt="Renata1" height="150px" widht="150px"/>  -->
+    </div>
+    <!-- <figure class="picture pic1">
+        <img src="Renata/Renata1.jpg" alt="Renata1" height="150px" widht="150px"/> 
+    </figure> -->
+    <div class="item black l1">
+        <ul>1973</ul>
+    </div>  
+    <div class="item white">
+        <div class="item white">
+            <img src="RenataDušan/tatry.jpg" alt="Tatry"height="400px" widht="400x"/> 
+        </div>
+    </div>
+    <div class="item grey l1">
+        <ul>50</ul>
+    </div>
+    <div class="item grey arizona">
+        <!-- <span>Pozvánka na</span>
+        <span>oslavu narozenin</span>
+        <span>2 x 50</span>
+        <span>2 x 50</span> -->
+      <ul>
+            <ul class="invitation">Pozvánka na</ul>
+            <ul lass="invitation">oslavu narozenin</ul>
+            <ul class="half-top">2 x 50</ul>
+            <ul class="half-bottom">2 x 25</ul>
+        </ul>
+    </div>
+    <figure class="picture pic2">
+        <img src="RenataDušan/DR_víno_ctverec_cb2.jpg" alt="D+R víno"height="400px" widht="400x"/> 
+    </figure>   
+    <div class="item black l2" >
+        <ul>
+          <ul style="font-size: 70px;">17.6.2023</ul>
+          <ul style="font-size: 55px; color:#9FB5B3">od 14 hod</ul>
+       </ul>
+    </div> 
+    <div class="item white">
+        <img src="Dušan/dušan1_ctverec.png" alt="Dušan 1"height="400px" widht="400x"/> 
+    </div>
+    <div class="item white">
+        <img src="VojtaMartas/Martas1_cb.JPG" alt="V+M Sedačky"height="400px" widht="400x"/> 
+    </div>
+    <div class="item grey place">
+        <ul style="margin-block-start: 1em" class="item-place"><a href="https://www.hotelpodzvicinou.cz">Hotel pod Zvičinou</a></ul>
+        <ul class="item-place">Dolní Brusnice 96</ul>
+        <ul class="item-place">Bílá Třemešná</ul>
+        <ul style="font-size: 20px;"><a href="https://goo.gl/maps/oRTNPrXgxkh2x83w5">GPS 50.45017378696939, 15.712412664257322</a></ul>
+        <ul style="color:red">pozor objížďka!!</ul>
+    </div>
+    <div class="item white">
+        <img src="VojtaMartas/vojta-bady-cb.JPG" alt="Vojta a Bady"height="400px" widht="400x"/> 
+    </div>
+    <div class="item black arizona" style="padding-top: 50px;"> 
+        <ul class="info">možnost ubytování v hotelu</ul>
+        <ul class="info" style="font-size:10px">25 50 150 50 25 50 150 50 25 50 150 50 25 50 150 50 25 </ul>
+        <ul class="info">doprava domů zajištěna</ul>
+<!--         <ul class="tangerine">text 6</ul> 
+        <ul class="arizona">text 6</ul>
+        <ul class="grape">text 6</ul> -->
+        <!-- <ul class="ibm">text 6</ul> -->
+    </div>
+    <div class="item black l1">
+        <ul>25</ul>
+    </div>
+    <div class="item white">
+        <div class="item white">
+            <img src="VojtaMartas/kreslocb.jpg" alt="V+M Sedačky"height="400px" widht="400x"/> 
+        </div>
+    </div>
+    <div class="item grey l1">
+        <ul>1998</ul>
+    </div>
+    <div class="item white">
+        <div class="item white">
+            <div class="item white">
+                <img src="VojtaMartas/VJ3.jpg" alt="V+M 3"height="400px" widht="400x"/> 
+            </div>
+    </div>
+    
+</div>
+    
+</body>
+</html>
