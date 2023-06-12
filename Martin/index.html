@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Invitation</title>
+    <style>
+        /* #size {
+            font-size: 2rem;
+        }*/
+        body {
+            font-size: 50px;
+            font-family: 'Roboto', bold; /*sans-serif; */
+            padding: 0px 0px 0px 0px;
+            background-color: #9FB5B3;
+        } 
+
+        /* .Date > img{
+          width:150;
+          height:150;
+        } */
+
+        img{
+            border-radius: 5%;
+        }
+        /* .item {
+            font-weight: 1500;
+        } */
+        
+        /* #family {
+            font-family: 'Roboto', cursive;
+        } */
+        
+        .l1 {
+            /* padding-top: 125px; */
+            font-size: 125px;
+        }
+        
+        .l2 {
+            padding-top: 25px;
+            align-content: center;
+            padding-block: 25px;
+            font-size: 50px;
+        }
+        .container{
+            display:grid;
+            justify-content: center;
+            grid-template-columns: 400px 400px 400px 400px;/* 1fr 1fr 1fr 1fr;*/
+            grid-template-rows:400px 400px 400px 400px;/* 1fr 1fr 1fr 1fr;*/
+            gap:10px;
+            /* height:100vh;*/
+            
+        }
+        .grey{
+            background-color: lightgray;
+            
+        }
+        .black{
+            background-color: dimgray;
+            color:aliceblue;
+        }
+        /*#figure{
+            align-items: center;
+        }*/
+        .picture{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            /*             object-fit: cover;
+            object-position: bottome; */
+            /*transform: rotate(-90deg) scale(0.75);*/
+        } 
+        .item{
+            text-align: center;
+            border-radius: 5%;
+            /* align-self: center;*/  
+        }
+        .place{
+            font-size: 35px;
+            padding:0px;
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+            /* padding-top: 25px; */
+            /*             margin: 0;
+            padding: 0;
+            border: 0; */
+        } 
+        .info{
+            padding-top: 50px;
+        }
+        .item-info{
+            font-size:50px;
+            margin-block-start: 0em;
+            margin-block-end: 0em;  
+        }
+        ul {
+            /*   margin-block-start: 0px;
+            margin-block-end: 0px;
+            /* padding-inline-start: 0px;*/
+            /* padding-inline: 40px; */
+            
+            /* margin: 1em 1em 1em 1em; */
+            padding: 0px 0px 0px 0px;
+            padding-inline-start: 0px;
+            /* margin-block-start: 0em;
+            margin-block-end: 0em; */
+        }
+        ul ul {
+            margin: 0em 0em 0em 0em; 
+            padding: 0px 0px 0px 0px;
+            
+        }
+        .item-place-hotel{
+            font-family: 'Arizonia', cursive;
+            margin-block-start: 1em;
+        }
+        .item-place{
+            margin-block-start: 0.5em;
+            margin-block-end: 0.5em;
+            font-family: 'Arizonia', cursive;
+            
+        }
+        .item-place1{
+            margin-block-start: 1em;
+        }
+        .item-GPS{
+            font-size: 20px;
+        }
+        .item-round{
+            color:red;
+            font-size: 30px;
+        }
+        .half-top{
+            /* padding-top: 75px;*/
+            font-size: 50px;
+            font-family: 'Roboto', bold; 
+            color: white;
+            background-color: #9FB5B3;
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right:100px;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            /* padding-top: 20px; */
+            /* padding-inline: 40px; */
+            /*      margin: 0em 0em 0em 0em;  */
+        }
+        .half-bottom{
+            font-size: 50px;
+            font-family: 'Roboto', bold; 
+            color: white;
+            background-color: #9FB5B3;
+            margin-left: 100px;
+            margin-right:100px;
+            border-bottom-left-radius: 5%;
+            border-bottom-right-radius: 5%;
+            /* padding-bottom: 20px; */
+        }
+        /*         #figure{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        } */
+        /*.gr1{
+            order:1;
+        }
+        .img{
+            padding:10px;
+            float:left;
+        }*/
+        .white{
+            /* transform: rotate(-90deg) scale(0.75); */
+            margin: 0;
+            /*             padding: 0;*/
+            border: 0;  
+        } 
+        .Date1{
+            font-size: 70px;
+        }
+        .Date2{
+            font-size: 55px;
+            color:#9FB5B3;
+        }
+/*         .Image50{
+            width:150;
+            height:150;
+        } */
+        .courgette{
+            font-family: 'Courgette', cursive;
+        }
+        .arizona{
+            font-family:  'Arizonia', cursive;
+            /* font-size:75px; */
+        }
+        .grape{
+            font-family: 'Grape Nuts', cursive;
+        }
+        .ibm{
+            font-family: 'IBM Plex Serif', serif;
+            font-style: italic;
+        }
+        .tangerine{
+            font-family: 'Tangerine', cursive;  
+            font-size:90px;
+            padding: 0px 0px 0px 0px;
+            display:block;
+        }
+        .invitation{
+            margin-block-start: 0em;   
+            margin-block-end: 0em;
+        }
+        /* .img-150{
+          width:150;
+          height:150;
+        } */
+        
+        
+        @media (max-width: 600px) {
+            body{
+                font-size: 25px;
+            }
+            .container{
+                display:grid;
+                justify-content: center;
+                grid-template-columns: 200px; 
+                grid-template-rows:200px;/* 200px 200px 200px;*/ 
+                gap:5px;
+            }
+
+              /*width:25;*/
+            /*  height:25;*/
+            /* img
+            {
+                width: 200x;
+                height: 200px;
+            }  */
+            .Image{
+                width: 200px;
+                height: 200px;
+            }
+            .Image-50{
+              width:50px;
+              height:50px;
+            }
+            .item{
+                width: 200x;
+                height: 200px;
+            }
+            .place{
+                font-size: 25px;
+            }
+            .info{
+              padding-top: 25px;
+        }
+            .item-info{
+                font-size:25px;
+            }
+            .l1 {
+                /* padding-top: 125px; */
+                font-size: 64px;
+            }
+            .l2 {
+                padding-top: 12px; 
+                align-content: center;
+                padding-block: 12px; 
+                font-size: 25px;
+            }
+            .item-place{
+                margin-block-start: 0.05em;
+                margin-block-end: 0.05em;
+            }
+            .item-GPS{
+                font-size: 10px;
+            }
+            .item-round{
+                font-size: 15px;
+            }
+            .item-place1{
+                margin-block-start: 0.5em;
+            }
+            .half-top{
+                font-size: 25px;
+                margin-top: 25px;
+                margin-left: 50px;
+                margin-right: 50px;
+                /* padding-top: 20px; */
+                /* padding-inline: 40px; */
+                /*      margin: 0em 0em 0em 0em;  */
+            }
+            .half-bottom{
+                font-size: 25px;;
+                margin-left: 50px;
+                margin-right:50px;
+            }
+            .Date{
+                margin-top:50px;
+            }
+            .Date1{
+                font-size: 35px;
+            }
+            .Date2{
+                font-size: 27px;
+            }
+
+            /* height:100vh;*/
+            /* .img-150{
+               width:50;
+               height:50;
+            } */
+        }
+            
+        @media(min-width: 601px) and (max-width: 1000px){
+            body{
+                font-size: 25px;
+            }
+            .container{
+                display:grid;
+                justify-content: center;
+                grid-template-columns: 250px 250px; 
+                grid-template-rows:250px;/* 200px 200px 200px;*/ 
+                gap:5px;
+            }
+            /* img
+            {
+                width: 250px;
+                height: 250px;
+            }  */
+            .Image {
+                width: 250px;
+                height: 250px;
+            } 
+            .Image-50{
+              width:90px;
+              height:90px;
+            }
+            .item{
+                width: 250x;
+                height: 250px;
+            }
+            .place{
+                font-size: 25px;
+            }
+            .info{
+               padding-top: 0px;
+               margin-top: 0px;
+            }
+            .item-info{
+                font-size:25px;
+                padding-top:35px;
+            }
+            .l1 {
+                /* padding-top: 125px; */
+                font-size: 64px;
+            }
+            .l2 {
+                padding-top: 0px; 
+                align-content: center;
+                padding-block: 0px; 
+                font-size: 35px;
+            } 
+            .item-place{
+                margin-block-start: 0.05em;
+                margin-block-end: 0.05em;
+            }
+            .item-GPS{
+                font-size: 10px;
+            }
+            .item-round{
+                font-size: 20px;
+            }
+            .item-place1{
+                margin-block-start: 0.5em;
+            }
+            .half-top{
+                font-size: 25px;
+                margin-top: 25px;
+                margin-left: 50px;
+                margin-right: 50px;
+                /* padding-top: 20px; */
+                /* padding-inline: 40px; */
+                /*      margin: 0em 0em 0em 0em;  */
+            }
+            .half-bottom{
+                font-size: 25px;;
+                margin-left: 50px;
+                margin-right:50px;
+            }
+            /* .Date{
+                padding-top: 20px;
+            } */
+            .Date1{
+                font-size: 35px;
+           /*      padding-top:30px */
+            }
+            .Date2{
+                font-size: 27px;
+            } 
+/*             .img-150{
+               width:90;
+               height:90;
+            } */
+        }
+        @media(min-width: 1001px) and (max-width: 1600px){
+            body{
+                font-size: 40px;
+            }
+            .container{
+                display:grid;
+                justify-content: center;
+                grid-template-columns: 320px 320px 320px; 
+                grid-template-rows:320px;/* 200px 200px 200px;*/ 
+                gap:7px;
+            }
+            /* img
+            {
+                width: 320px;
+                height: 320px;
+            }  */
+            .Image{
+                width: 320px;
+                height: 320px;
+            }
+            .Image-50{
+              width:120px;
+              height:120px;
+            }
+            .item{
+                width: 320x;
+                height: 320px;
+            }
+            .place{
+                font-size: 35px;
+            }
+            .info{
+               padding-top: 0px;
+               margin-top: 0px;
+            }
+            .item-info{
+                font-size:35px;
+                padding-top:45px;
+            }
+            .l1 {
+                /* padding-top: 125px; */
+                font-size: 100px;
+            }
+            .l2 {
+                padding-top: 0px; 
+                align-content: center;
+                padding-block: 0px; 
+                font-size: 70px;
+            } 
+            .item-place{
+                margin-block-start: 0.05em;
+                margin-block-end: 0.05em;
+            }
+            .item-GPS{
+                font-size: 10px;
+            }
+            .item-round{
+                font-size: 20px;
+            }
+            .item-place1{
+                margin-block-start: 0.5em;
+            }
+            .half-top{
+                font-size: 25px;
+                margin-top: 25px;
+                margin-left: 50px;
+                margin-right: 50px;
+                /* padding-top: 20px; */
+                /* padding-inline: 40px; */
+                /*      margin: 0em 0em 0em 0em;  */
+            }
+            .half-bottom{
+                font-size: 25px;;
+                margin-left: 50px;
+                margin-right:50px;
+            }
+            .Date{
+                padding-top: 0px;
+            }
+            .Date1{
+                font-size: 35px;
+           /*      padding-top:30px */
+            }
+            .Date2{
+                font-size: 27px;
+            } 
+        }
+        
+        /*     @media (min-width: 1201px) and (max-width: 1600px) {
+            body {
+                background-color: limegreen;
+            }
+        }
+        
+        @media (min-width: 1601px) {
+            body {
+                background-color: seagreen;
+            }
+        }  */   
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Courgette&family=Grape+Nuts&family=IBM+Plex+Serif:ital,wght@0,700;1,700&family=Roboto&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="item white">
+            <figure class="picture pic1">
+                <img class="Image" src="../Renata/atelier_ctverec.jpg" alt="Renata1" height="400px" width="400px"/> 
+            </figure>
+        </div>
+        <div class="item black l1">
+            <ul>1973</ul>
+        </div>  
+        <div class="item white">
+            <div class="item white">
+                <img class="Image" src="../RenataDušan/tatry.jpg" alt="Tatry"height="400px" width="400px"/> 
+            </div>
+        </div>
+        <div class="item grey l1">
+            <ul>50</ul>
+        </div>
+        <div class="item grey arizona">
+            <ul>
+                <ul class="invitation">Pozvánka na</ul>
+                <ul class="invitation">oslavu narozenin</ul>
+                <ul class="half-top">2 x 50</ul>
+                <ul class="half-bottom">2 x 25</ul>
+            </ul>
+        </div>
+        <figure class="picture pic2">
+            <img class="Image" src="../RenataDušan/DR_víno_ctverec_cb2.jpg" alt="D+R víno"height="400px" width="400px"/> 
+        </figure>   
+        <div class="item black l2" >
+            <ul class="Date">
+                    <ul class = "Date1">17.6.2023</ul>
+                    <ul class = "Date2">od 14 hod</ul>
+                    <!-- /*<ul class = "Date3"> </ul>*/ -->
+                    <!-- <img class="img-150" src="./150_2.jpg" alt="150" height="150px" width="150px"> -->
+                    <div>
+                       <a href="../details/presents.html"><img class="Image-50" src="../150_2.jpg" alt="150" height="150px" width="150px"></a>
+                       <!-- <img class="Image-50" src="./150_2.jpg" alt="150" height="150px" width="150px"><a href="./presents.html"></a> -->
+                   </div>
+            </ul>
+        </div> 
+            <div class="item white">
+                <img class="Image" src="../Dušan/dušan1_ctverec.png" alt="Dušan 1"height="400px" width="400px"/> 
+            </div>
+            <div class="item white">
+                <img class="Image" src="../VojtaMartas/Martas1_cb.JPG" alt="V+M Sedačky"height="400px" width="400px"/> 
+            </div>
+            <div class="item grey place">
+                <!-- <ul style="margin-block-start: 1em" class="item-place 1"><a href="https://www.hotelpodzvicinou.cz">Hotel pod Zvičinou</a></ul> -->
+                <ul class="item-place-hotel"><a href="https://www.hotelpodzvicinou.cz">Hotel pod Zvičinou</a></ul>
+                <ul class="item-place">Dolní Brusnice 96</ul>
+                <ul class="item-place">Bílá Třemešná</ul>
+                <ul class="item-GPS"><a href="https://goo.gl/maps/oRTNPrXgxkh2x83w5">GPS 50.45017378696939, 15.712412664257322</a></ul>
+                <!-- <ul style="font-size: 20px;"><a href="https://goo.gl/maps/oRTNPrXgxkh2x83w5">GPS 50.45017378696939, 15.712412664257322</a></ul> -->
+                <ul class="item-round">pozor objížďka!!</ul>
+            </div>
+            <div class="item white">
+                <img class="Image" src="../VojtaMartas/vojta-bady-cb.JPG" alt="Vojta a Bady"height="400px" width="400px"/> 
+            </div>
+            <div class="item black arizona info"> 
+                <ul class="item-info">ubytování v hotelu rezervováno</ul>
+                <ul class="item-info" style="font-size:10px; color:#9FB5B3">25 50 150 50 25 50 150 50 25 50 150 50 25 50 150 50 25 </ul>
+                <ul class="item-info" style="font-family: 'Roboto', bold; color:white">
+                    <a href="https://app.myalfred.cz/login/RP56ES?intendedUrl=/reservation/checkin" target="_blank" rel="noopener">kód pro check-in: RP56ES</a>
+                </ul>
+            </div>
+            <div class="item black l1">
+                <ul>25</ul>
+            </div>
+            <div class="item white">
+                <div class="item white">
+                    <img class="Image" src="../VojtaMartas/kreslocb.jpg" alt="V+M Sedačky"height="400px" width="400px"/> 
+                </div>
+            </div>
+            <div class="item grey l1">
+                <ul>1998</ul>
+            </div>
+            <div class="item white">
+                <div class="item white">
+                    <div class="item white">
+                        <img class="Image" src="../VojtaMartas/VJ3.jpg" alt="V+M 3"height="400px" width="400px"/> 
+                    </div>
+                </div>
+                
+            </div>
+            
+        </body>
+        </html>
